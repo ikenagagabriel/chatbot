@@ -18,3 +18,9 @@ class Choice(models.Model):
     votes = models.IntegerField(default=0)
     def __str__(self):
         return self.choice_text
+
+class Bot(models.Model):
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    response = models.CharField(max_length=200)
+    def __str__(self):
+        return self.response
