@@ -82,6 +82,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'chatterbot-database',
+        'ENFORCE_SCHEMA': False,
+        'CLIENT': {
+            'host':'mongodb+srv://gabrike:Moonlight*8@chatbotufabc.7rxaggi.mongodb.net/?retryWrites=true&w=majority'
+            }
     }
 }
 
