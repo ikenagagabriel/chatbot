@@ -24,6 +24,7 @@ djangotoolbox>=1.8.0
 djongo>=1.3.6
 dnspython>=2.2.1
 entrypoints>=0.4
+gunicorn>=20.0,<21.0
 gTTS>=2.2.4
 idna>=3.3
 immutables>=0.17
